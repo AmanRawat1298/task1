@@ -1,0 +1,264 @@
+
+div{
+    border: 1px dotted red;
+}
+
+:root{
+    --primary : #ddd;
+    --dark : #333;
+    --light: #fff;
+    --shadow : 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.user
+{
+
+    height: 100%;
+    width: 45px;
+    
+}
+
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+// NAV BAR
+.navbar
+{
+    top: 0;
+    background-color: grey;
+    display: flex;
+    width: 100%;
+    height: 7%;
+
+    position:fixed;
+    flex-wrap: wrap;
+    
+    .logo
+    {
+        height: 70px;
+        width: 100%;
+        flex: 0.5;
+        padding: 3px;
+    }
+
+    .search
+    {
+        flex:3;
+        display:flex;
+        flex-direction :row;
+        // justify-content:flex-start;
+        
+
+        #search_box
+        {
+            margin:5%;
+            height: 80%;
+            width: 100%;
+        }
+    }
+
+
+    .options
+    {
+        flex:1;
+        margin: auto;
+        ul
+        {
+            display: flex;
+            justify-content: space-around;
+            margin: 2% 10px;
+            align-items: center;
+            margin: 0 1em;
+        }
+    }
+
+
+    
+   
+
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
+
+
+// WRAPPER
+
+.wrapper
+{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    // grid-template-areas:
+    
+    // ' top-screen top-screen top-screen top-screen top-screen top-screen top-screen top-screen top-screen top-screen'
+    // ' left-nav tasks tasks tasks tasks tasks tasks tasks tasks tasks'
+    // 'left-nav tasks tasks tasks tasks tasks tasks tasks tasks tasks';
+    
+    grid-template-areas:
+    
+    ' top-screen top-screen top-screen'
+    ' left-nav tasks tasks'
+    'left-nav tasks tasks';
+    
+    
+    .top-screen
+    {
+        grid-area: top-screen;
+        background-color: red;
+        width: 100%;
+        height: 20%;
+        
+        img{
+            width: 100%;
+            height: 20em;  
+
+        }
+    }
+
+
+
+
+    // left nav
+    .left-nav
+    {
+        grid-area: left-nav;
+
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 15vw;
+        // min-width: 150px;
+        // max-width: 150px;
+
+
+    }
+
+    .tasks
+    {
+        grid-area:tasks;
+        // grid-gap: 4%;
+        display: flex;
+        // flex-direction: row;
+       
+        h4{
+            text-align: center;
+        }
+
+        // making different tasks of equal size
+        .todo
+        {   
+            
+            flex: 1 1 0;
+        }
+
+        .inprogess
+        {
+            flex: 1 1 0;
+        }
+
+        .completed
+        {
+            flex: 1 1 0;
+        }
+        // done
+
+        .cards
+        {   
+            padding: 1vw;
+        }
+
+        .card
+        {
+            background: var(--primary);
+            text-align: center;
+            padding: 1rem 1rem;
+            margin: 2%;
+            box-shadow: var(--shadow);
+            border: 1px dotted green;
+            display: grid;
+            // overflow: auto;
+            resize: vertical;
+            
+            grid-template-rows: 0.5fr 2fr 1fr;
+            // grid-template-rows: min(2vh, 4vh) minmax(10vh, 15vh) min(6vh, 9vh);
+            
+            min-height: 5vh;
+            max-height: 300px;
+        
+
+            .user{
+               
+                padding: 10%;
+                width: 5vw;
+                height:100%;
+            }
+
+            
+            .serial-date
+            {
+                
+                display:flex;
+                border: 2px dotted red;
+                justify-content: space-between;
+                flex-direction: row;
+
+                h6{
+                    text-align: left;
+                }
+                p{
+                    text-align: right;
+                }
+            }
+            .content
+            {
+               padding: 3%;
+            }
+            .icon-priority
+            {
+            
+                background-color: green;
+                display: inline-flex;
+                div
+                {
+                    display: inline-flex;
+                
+                }
+               
+                .priority
+                {
+                    padding: 0% 4%;
+                    display: block;
+                } 
+
+                text-align: right;
+                justify-content: space-between;
+            }
+        }
+
+    }
+}
+
+
+
+@media(max-width:700px)
+{
+    .tasks{
+        display: flex;
+        flex-direction: column;
+    }
+}
