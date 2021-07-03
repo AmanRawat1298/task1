@@ -1,7 +1,6 @@
 
-div{
-    border: 1px dotted red;
-}
+
+
 
 :root{
     --primary : #ddd;
@@ -17,6 +16,8 @@ div{
     padding: 0;
 }
 
+
+
 .user
 {
 
@@ -25,10 +26,8 @@ div{
     
 }
 
-html, body {
-    height: 100%;
-    margin: 0px;
-}
+
+
 
 // NAV BAR
 .navbar
@@ -37,22 +36,26 @@ html, body {
     background-color: grey;
     display: flex;
     width: 100%;
-    height: 7%;
-
     position:fixed;
     flex-wrap: wrap;
-    
-    .logo
+
+    .product_logo
     {
-        height: 70px;
-        width: 100%;
-        flex: 0.5;
-        padding: 3px;
+        flex: 1.5;
+        .logo
+        {
+            height: 70px;
+            width: 100%;
+            flex: 0.5;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
     }
+    
 
     .search
     {
-        flex:3;
+        flex:6;
         display:flex;
         flex-direction :row;
         // justify-content:flex-start;
@@ -60,8 +63,8 @@ html, body {
 
         #search_box
         {
-            margin:5%;
-            height: 80%;
+            margin:2.5%;
+            height: 90%;
             width: 100%;
         }
     }
@@ -69,16 +72,33 @@ html, body {
 
     .options
     {
-        flex:1;
+       
+        flex: 3;
         margin: auto;
-        ul
+        display: flex;
+        align-items: center;
+        .features
         {
-            display: flex;
-            justify-content: space-around;
-            margin: 2% 10px;
-            align-items: center;
-            margin: 0 1em;
+            flex:3;
+            ul
+            {
+                display: flex;
+                justify-content: space-around;
+                // margin: 2% 10px;
+                align-items: center;
+                // margin: auto;
+                padding-left: 10%;
+            }
         }
+
+        .current_user
+        {
+            padding-left: 5%;
+            padding-right: 5%;
+
+        }
+        
+        
     }
 
 
@@ -103,23 +123,18 @@ ul{
     display: grid;
     width: 100%;
     height: 100%;
-    // grid-template-areas:
-    
-    // ' top-screen top-screen top-screen top-screen top-screen top-screen top-screen top-screen top-screen top-screen'
-    // ' left-nav tasks tasks tasks tasks tasks tasks tasks tasks tasks'
-    // 'left-nav tasks tasks tasks tasks tasks tasks tasks tasks tasks';
-    
+   
     grid-template-areas:
     
-    ' top-screen top-screen top-screen'
-    ' left-nav tasks tasks'
-    'left-nav tasks tasks';
+    ' top-screen top-screen top-screen top-screen'
+    ' left-nav tasks tasks tasks'
+    ' left-nav tasks tasks tasks';
     
     
     .top-screen
     {
         grid-area: top-screen;
-        background-color: red;
+        // background-color: red;
         width: 100%;
         height: 20%;
         
@@ -137,26 +152,59 @@ ul{
     .left-nav
     {
         grid-area: left-nav;
-
+        padding: 1%;
+        margin: 2%;
+        background-color: rgb(65, 55, 55);
         display: flex;
         flex-direction: column;
-        margin: auto;
-        width: 15vw;
-        // min-width: 150px;
-        // max-width: 150px;
+        ul{
+            
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-start;
+            align-items: center;
+            padding: 10%;
+            width: auto;
+            li{
+                border-radius: 10%;
+                padding-top: 10%;
+                padding-bottom: 10%;
+                margin: 10%;
+                font-size: medium;
+                text-align: center;
+                min-width: 100%;
+                
+                a{
+                    color: #796b6b;
+                    text-decoration: none;
+                }
+            }
 
+            li:hover{
+                background-color: rgb(99, 7, 99);
+                a{
+                    color: #ddd;
+                }
+            }
+        }
+        
+        width: 17vw;
+        max-width: 400px;
+  
 
     }
 
     .tasks
     {
         grid-area:tasks;
-        // grid-gap: 4%;
+    
         display: flex;
-        // flex-direction: row;
-       
-        h4{
+      
+        .heading{
             text-align: center;
+            background-color: #978383;
+            padding: 2.5%;
+            margin: 2%;
         }
 
         // making different tasks of equal size
@@ -177,43 +225,25 @@ ul{
         }
         // done
 
-        .cards
-        {   
-            padding: 1vw;
-        }
-
         .card
         {
             background: var(--primary);
             text-align: center;
-            padding: 1rem 1rem;
-            margin: 2%;
+            padding: 1% 1%;
+            margin: 3%;
             box-shadow: var(--shadow);
-            border: 1px dotted green;
-            display: grid;
-            // overflow: auto;
-            resize: vertical;
-            
-            grid-template-rows: 0.5fr 2fr 1fr;
-            // grid-template-rows: min(2vh, 4vh) minmax(10vh, 15vh) min(6vh, 9vh);
-            
-            min-height: 5vh;
-            max-height: 300px;
+            // border: 1px dotted green;
+            display: grid;           
+            height: auto;
         
 
-            .user{
-               
-                padding: 10%;
-                width: 5vw;
-                height:100%;
-            }
 
             
             .serial-date
             {
                 
                 display:flex;
-                border: 2px dotted red;
+                // border: 2px dotted red;
                 justify-content: space-between;
                 flex-direction: row;
 
@@ -224,29 +254,83 @@ ul{
                     text-align: right;
                 }
             }
+
             .content
             {
                padding: 3%;
+               h5{
+                   font-size: medium;
+               }
+               p{
+                   font-size: small;
+               }
             }
-            .icon-priority
-            {
-            
-                background-color: green;
-                display: inline-flex;
-                div
-                {
-                    display: inline-flex;
-                
-                }
-               
-                .priority
-                {
-                    padding: 0% 4%;
-                    display: block;
-                } 
 
-                text-align: right;
+            .icon-priority{
+                
+                display: flex;
                 justify-content: space-between;
+
+                .icon
+                {
+                   display: flex;
+              
+                   
+                   .pic{
+                      flex: 1;
+
+                      .user{
+                        padding: 5%;
+                        max-height: 80%;
+                      }
+                   }
+
+                   .name{
+                       flex:1;
+                       padding-top: 10%;
+                       font-size: x-small;
+                       
+
+                   }
+                }
+
+                .priority{
+                    
+                    font-size: small;
+                     margin: 1%;
+                    .btn
+                    {
+                        margin: 5%;  
+                        
+                        color: #ddd;
+                        border-radius: 15%;
+                        
+                    }
+                    
+                }
+
+            }
+
+        }
+
+
+        .inprogess{
+            .btn
+            {
+                background-color: rgb(201, 201, 5);
+            }
+        }
+        .todo{
+            .btn
+            {
+                background-color: red;
+            }
+        }
+        .completed
+        {
+            .btn
+            {
+                background-color: green;
             }
         }
 
@@ -255,10 +339,62 @@ ul{
 
 
 
-@media(max-width:700px)
+
+@media  (max-width:700px)
 {
+    
+    .top-screen{
+        grid-area: top-screen;
+    }
+    
     .tasks{
+        grid-area: tasks;
         display: flex;
         flex-direction: column;
     }
+    .wrapper{
+        background-color: red;
+        grid-template-rows: 1fr 0.35fr 3fr;
+        grid-template-areas: 
+        'top-screen'
+        'left-nav'
+        'tasks';
+    }
+    .left-nav
+    {
+        
+            ul
+            {
+                display: flex;
+                justify-content: space-around;
+                // margin: 2% 10px;
+                align-items: center;
+                // margin: auto;
+                padding-left: 10%;
+            }
+        
+
+        width: 100vw;
+        max-width: 100%;
+        grid-area: left-nav;
+        
+        flex-direction: row;
+        background-color: green;
+        // ul
+        // {
+        //     display: flex;
+        //     flex-direction: row;
+        //     // display: inline;
+        // }
+    
+        // 
+
+
+        // 
+
+    }
+
+
+   
+    
 }

@@ -10,11 +10,11 @@
     <!-- TOP NAV BAR (FIXED) -->
     <div class="navbar">
         
-        <img class="logo" src="./img/tracker-1-logo-png-transparent.png" alt="">
-       
-
+        <div class="product_logo">
+            <img class="logo" src="./img/tracker-1-logo-png-transparent.png" alt="">
+        </div>
+        
         <div class="search">
-            
             <div>
                 <img class="user" src= "./img/search.jpg">
             </div>
@@ -27,12 +27,16 @@
         </div>
         
         <div class="options">
-            <ul>
-                <li class = "btn" ><a href="">Home</a></li>
-                <li class = "btn" ><a href=""></a>Sign Up</a></li>
-                <li class = "btn" ><a href=""></a>Login</a></li>
-                <li> <img class="user" src= "./img/user.jpg"> </li>
-            </ul>
+            <div class="features">
+                <ul>
+                    <li class = "btn" ><a href="">Home</a></li>
+                    <li class = "btn" ><a href="">Sign Up</a></li>
+                    <li class = "btn" ><a href="">Login</a></li>
+                </ul>
+            </div>
+            <div class="current_user">
+                <img class="user" src= "./img/user.jpg"> </li>
+            </div>
             
         </div>
     </div>
@@ -59,114 +63,235 @@
             <!-- cards -->
             <div class="tasks">
                 <div class="todo">
-                    <h4>TODO</h4>
+                    <div class="heading"><h4>TODO</h4></div>
+                    
                     <div class="cards">
                         <ul>
                         
                             <li>
                                 <div class="card">
+
+
+                                    <!-- 3 flex items -->
+
+
+                                    <!-- 1st -->
                                     <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
+                                        <div>
+                                            <h6>ID:1234</h6> 
+                                        </div>
+                                        <div>
+                                            <p>January 1 2021</p>
+                                        </div>
+                                       
                                     </div>
 
+                                    <!-- 2nd -->
                                     <div class="content">
                                         <h5>Lorem ipsum dolor sit.</h5>
                                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
                                     </div>
+                                   
+                                    <!-- 3rd -->
                                     <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
-                                        </div>
-                                        <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </li>
-
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
-                                    </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
-                                        </div>
-                                        <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </li>
-
-
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
-                                    </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
-                                        </div>
-                                        <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </li>
-
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
-                                    </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
                                         
-                                        <p>Aman Rawat</p>
+                                        <div class="icon">
+                                            <div class="pic">
+                                                <img class="user" src= "./img/user.jpg">
+                                            </div>
+                                            <div class="name">
+                                                <div class="person_name">
+                                                    <p>Aman Rawat</p>
+                                                </div>
+                                                <div class="designation">
+                                                    <p>Software Developer</p>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
+                                        
+                                        
+                                        
                                         <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
+                                            <div class="status">
+                                                <p>status</p>
+                                            </div>
+                                                
+                                            <div class="btn">
+                                                <p>High Priority</p>
+                                            </div>
                                         </div>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <div class="card">
+
+
+                                    <!-- 3 flex items -->
+
+
+                                    <!-- 1st -->
+                                    <div class="serial-date">
+                                        <div>
+                                            <h6>ID:1234</h6> 
+                                        </div>
+                                        <div>
+                                            <p>January 1 2021</p>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- 2nd -->
+                                    <div class="content">
+                                        <h5>Lorem ipsum dolor sit.</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
+                                    </div>
+                                   
+                                    <!-- 3rd -->
+                                    <div class="icon-priority">
+                                        
+                                        <div class="icon">
+                                            <div class="pic">
+                                                <img class="user" src= "./img/user.jpg">
+                                            </div>
+                                            <div class="name">
+                                                <div class="person_name">
+                                                    <p>Aman Rawat</p>
+                                                </div>
+                                                <div class="designation">
+                                                    <p>Software Developer</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class= priority>
+                                            <div class="status">
+                                                <p>status</p>
+                                            </div>
+                                                
+                                            <div class="btn">
+                                                <p>High Priority</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="card">
+
+
+                                    <!-- 3 flex items -->
+
+
+                                    <!-- 1st -->
+                                    <div class="serial-date">
+                                        <div>
+                                            <h6>ID:1234</h6> 
+                                        </div>
+                                        <div>
+                                            <p>January 1 2021</p>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- 2nd -->
+                                    <div class="content">
+                                        <h5>Lorem ipsum dolor sit.</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
+                                    </div>
+                                   
+                                    <!-- 3rd -->
+                                    <div class="icon-priority">
+                                        
+                                        <div class="icon">
+                                            <div class="pic">
+                                                <img class="user" src= "./img/user.jpg">
+                                            </div>
+                                            <div class="name">
+                                                <div class="person_name">
+                                                    <p>Aman Rawat</p>
+                                                </div>
+                                                <div class="designation">
+                                                    <p>Software Developer</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class= priority>
+                                            <div class="status">
+                                                <p>status</p>
+                                            </div>
+                                                
+                                            <div class="btn">
+                                                <p>High Priority</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="card">
+
+
+                                    <!-- 3 flex items -->
+
+
+                                    <!-- 1st -->
+                                    <div class="serial-date">
+                                        <div>
+                                            <h6>ID:1234</h6> 
+                                        </div>
+                                        <div>
+                                            <p>January 1 2021</p>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <!-- 2nd -->
+                                    <div class="content">
+                                        <h5>Lorem ipsum dolor sit.</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
+                                    </div>
+                                   
+                                    <!-- 3rd -->
+                                    <div class="icon-priority">
+                                        
+                                        <div class="icon">
+                                            <div class="pic">
+                                                <img class="user" src= "./img/user.jpg">
+                                            </div>
+                                            <div class="name">
+                                                <div class="person_name">
+                                                    <p>Aman Rawat</p>
+                                                </div>
+                                                <div class="designation">
+                                                    <p>Software Developer</p>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class= priority>
+                                            <div class="status">
+                                                <p>status</p>
+                                            </div>
+                                                
+                                            <div class="btn">
+                                                <p>High Priority</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -179,248 +304,306 @@
                 </div>
 
                 <div class="inprogess">
-                    <h4>IN-Progress</h4>
+                    <div class="heading"><h4>INPROGRESS</h4></div>
                     <div class="cards">
-                        <ul>
-                        
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
+                     <ul>
+
+                        <li>
+                            <div class="card">
+
+
+                                <!-- 3 flex items -->
+
+
+                                <!-- 1st -->
+                                <div class="serial-date">
+                                    <div>
                                         <h6>ID:1234</h6> 
+                                    </div>
+                                    <div>
                                         <p>January 1 2021</p>
                                     </div>
+                                   
+                                </div>
 
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
+                                <!-- 2nd -->
+                                <div class="content">
+                                    <h5>Lorem ipsum dolor sit.</h5>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
+                                </div>
+                               
+                                <!-- 3rd -->
+                                <div class="icon-priority">
+                                    
+                                    <div class="icon">
+                                        <div class="pic">
+                                            <img class="user" src= "./img/user.jpg">
                                         </div>
-                                        <div class= priority>
-                                        <p>status</p>
+                                        <div class="name">
+                                            <div class="person_name">
+                                                <p>Aman Rawat</p>
+                                            </div>
+                                            <div class="designation">
+                                                <p>Software Developer</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class= priority>
+                                        <div class="status">
+                                            <p>status</p>
+                                        </div>
+                                            
                                         <div class="btn">
                                             <p>High Priority</p>
                                         </div>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                            </li>
+                        </li>
+                        <li>
+                            <div class="card">
 
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
+
+                                <!-- 3 flex items -->
+
+
+                                <!-- 1st -->
+                                <div class="serial-date">
+                                    <div>
                                         <h6>ID:1234</h6> 
+                                    </div>
+                                    <div>
                                         <p>January 1 2021</p>
                                     </div>
+                                   
+                                </div>
 
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
+                                <!-- 2nd -->
+                                <div class="content">
+                                    <h5>Lorem ipsum dolor sit.</h5>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
+                                </div>
+                               
+                                <!-- 3rd -->
+                                <div class="icon-priority">
+                                    
+                                    <div class="icon">
+                                        <div class="pic">
+                                            <img class="user" src= "./img/user.jpg">
                                         </div>
-                                        <div class= priority>
-                                        <p>status</p>
+                                        <div class="name">
+                                            <div class="person_name">
+                                                <p>Aman Rawat</p>
+                                            </div>
+                                            <div class="designation">
+                                                <p>Software Developer</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class= priority>
+                                        <div class="status">
+                                            <p>status</p>
+                                        </div>
+                                            
                                         <div class="btn">
                                             <p>High Priority</p>
                                         </div>
-                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                            </li>
-
-
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
-                                    </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
-                                        </div>
-                                        <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </li>
-
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
-                                    </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        
-                                        <p>Aman Rawat</p>
-                                        </div>
-                                        <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </li>
-
-
-                        </ul>
+                        </li>
+                     </ul>
                     </div>
                 </div>
 
                 <div class="completed">
-                    <h4>Completed</h4>
+                    <div class="heading"><h4>COMPLETED</h4></div>
                     <div class="cards">
-                        <ul>
-                        
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
+                      <ul>
+                        <li>
+                            <div class="card">
+
+
+                                <!-- 3 flex items -->
+
+
+                                <!-- 1st -->
+                                <div class="serial-date">
+                                    <div>
                                         <h6>ID:1234</h6> 
+                                    </div>
+                                    <div>
                                         <p>January 1 2021</p>
                                     </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
-                                        </div>
-                                        <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
-                                        </div>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
 
-                            </li>
-
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
-                                    </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
-                                        </div>
-                                        <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
-                                        </div>
-                                        </div>
-                                    </div>
+                                <!-- 2nd -->
+                                <div class="content">
+                                    <h5>Lorem ipsum dolor sit.</h5>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
                                 </div>
-
-                            </li>
-
-
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
-                                    </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                        <img class="user" src= "./img/user.jpg">
-                                        <p>Aman Rawat</p>
-                                        </div>
-                                        <div class= priority>
-                                        <p>status</p>
-                                        <div class="btn">
-                                            <p>High Priority</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </li>
-
-                            <li>
-                                <div class="card">
-                                    <div class="serial-date">
-                                        <h6>ID:1234</h6> 
-                                        <p>January 1 2021</p>
-                                    </div>
-
-                                    <div class="content">
-                                        <h5>Lorem ipsum dolor sit.</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
-                                    </div>
-                                    <div class="icon-priority">
-                                        <div>
-                                            
-                                        <div>
+                               
+                                <!-- 3rd -->
+                                <div class="icon-priority">
+                                    
+                                    <div class="icon">
+                                        <div class="pic">
                                             <img class="user" src= "./img/user.jpg">
                                         </div>
-
-                                        <div>
-                                            Aman Rawat vishnu
+                                        <div class="name">
+                                            <div class="person_name">
+                                                <p>Aman Rawat</p>
+                                            </div>
+                                            <div class="designation">
+                                                <p>Software Developer</p>
+                                            </div>
+                                            
                                         </div>
-                                        
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class= priority>
+                                        <div class="status">
+                                            <p>status</p>
                                         </div>
-                                        <div class= priority>
-                                        <p>status</p>
+                                            
                                         <div class="btn">
                                             <p>High Priority</p>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="card">
+
+
+                                <!-- 3 flex items -->
+
+
+                                <!-- 1st -->
+                                <div class="serial-date">
+                                    <div>
+                                        <h6>ID:1234</h6> 
+                                    </div>
+                                    <div>
+                                        <p>January 1 2021</p>
+                                    </div>
+                                   
+                                </div>
+
+                                <!-- 2nd -->
+                                <div class="content">
+                                    <h5>Lorem ipsum dolor sit.</h5>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
+                                </div>
+                               
+                                <!-- 3rd -->
+                                <div class="icon-priority">
+                                    
+                                    <div class="icon">
+                                        <div class="pic">
+                                            <img class="user" src= "./img/user.jpg">
+                                        </div>
+                                        <div class="name">
+                                            <div class="person_name">
+                                                <p>Aman Rawat</p>
+                                            </div>
+                                            <div class="designation">
+                                                <p>Software Developer</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class= priority>
+                                        <div class="status">
+                                            <p>status</p>
+                                        </div>
+                                            
+                                        <div class="btn">
+                                            <p>High Priority</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                            </li>
+                        </li>
+                        <li>
+                            <div class="card">
 
 
-                        </ul>
+                                <!-- 3 flex items -->
+
+
+                                <!-- 1st -->
+                                <div class="serial-date">
+                                    <div>
+                                        <h6>ID:1234</h6> 
+                                    </div>
+                                    <div>
+                                        <p>January 1 2021</p>
+                                    </div>
+                                   
+                                </div>
+
+                                <!-- 2nd -->
+                                <div class="content">
+                                    <h5>Lorem ipsum dolor sit.</h5>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fugit quae sed suscipit quibusdam, itaque mollitia consequatur ratione iste amet veniam perferendis placeat id corrupti odit, atque voluptates non quos.</p>
+                                </div>
+                               
+                                <!-- 3rd -->
+                                <div class="icon-priority">
+                                    
+                                    <div class="icon">
+                                        <div class="pic">
+                                            <img class="user" src= "./img/user.jpg">
+                                        </div>
+                                        <div class="name">
+                                            <div class="person_name">
+                                                <p>Aman Rawat</p>
+                                            </div>
+                                            <div class="designation">
+                                                <p>Software Developer</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class= priority>
+                                        <div class="status">
+                                            <p>status</p>
+                                        </div>
+                                            
+                                        <div class="btn">
+                                            <p>High Priority</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        v
+                        
+                      </ul>
                     </div>
                 </div>
 
