@@ -11,6 +11,11 @@
   padding: 0;
 }
 
+#tick {
+  height: 20px;
+  width: 20px;
+}
+
 .user {
   height: 100%;
   width: 45px;
@@ -102,7 +107,6 @@ ul {
   display: flex;
   flex-direction: column;
   width: 17vw;
-  max-width: 400px;
 }
 
 .wrapper .left-nav ul {
@@ -115,13 +119,24 @@ ul {
 }
 
 .wrapper .left-nav ul li {
-  border-radius: 10%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  margin: 10%;
   font-size: medium;
   text-align: center;
   min-width: 100%;
+}
+
+.wrapper .left-nav ul li .icon_button {
+  display: flex;
+  border-radius: 10%;
+  margin: 4% 0%;
+  font-size: small;
+}
+
+.wrapper .left-nav ul li .icon_button .small_icon {
+  padding: 1%;
+}
+
+.wrapper .left-nav ul li .icon_button .button {
+  margin: 0 10%;
 }
 
 .wrapper .left-nav ul li a {
@@ -129,12 +144,17 @@ ul {
   text-decoration: none;
 }
 
-.wrapper .left-nav ul li:hover {
+.wrapper .left-nav ul .icon_button:hover {
   background-color: #630763;
 }
 
-.wrapper .left-nav ul li:hover a {
+.wrapper .left-nav ul .icon_button:hover a {
   color: #ddd;
+}
+
+.wrapper .left-nav ul .icon_button:hover .small_icon {
+  background-color: #ddd;
+  border-radius: 15%;
 }
 
 .wrapper .tasks {

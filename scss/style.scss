@@ -1,7 +1,3 @@
-
-
-
-
 :root{
     --primary : #ddd;
     --dark : #333;
@@ -17,6 +13,11 @@
 }
 
 
+#tick 
+{
+    height: 20px;
+    width: 20px;
+}
 
 .user
 {
@@ -147,7 +148,10 @@ ul{
 
 
 
-
+    // div
+    // {
+    //     border:1px dotted red;
+    // }
     // left nav
     .left-nav
     {
@@ -166,10 +170,28 @@ ul{
             padding: 10%;
             width: auto;
             li{
-                border-radius: 10%;
-                padding-top: 10%;
-                padding-bottom: 10%;
-                margin: 10%;
+                
+                .icon_button
+                {
+                    display: flex;
+                    border-radius: 10%;
+                    
+                    margin: 4% 0%;
+                    
+                    font-size: small;
+
+                    .small_icon
+                    {
+                        padding: 1%;
+                       
+                    }
+                    .button{ 
+                        margin: 0 10% ;  
+                    }
+                    
+                }
+
+                
                 font-size: medium;
                 text-align: center;
                 min-width: 100%;
@@ -180,16 +202,20 @@ ul{
                 }
             }
 
-            li:hover{
+            .icon_button:hover{
                 background-color: rgb(99, 7, 99);
                 a{
                     color: #ddd;
+                }
+                .small_icon{
+                    background-color: #ddd;
+                    border-radius: 15%;
                 }
             }
         }
         
         width: 17vw;
-        max-width: 400px;
+        // max-width: 450px;
   
 
     }
