@@ -1,9 +1,7 @@
-import * as data from './data.json'
 
 
-
-function myFunction() : void {
-    const x = document.getElementById("aman") as HTMLElement;
+function myFunction() {
+    var x = document.getElementById("aman");
     console.log("VIEW ON ")
     console.log(x.className);
     if (x.className == "cards") {
@@ -12,11 +10,9 @@ function myFunction() : void {
     } else {
       x.className = "cards";
     }
-}
-
-
-function myFunction2() : void {
-    const x = document.getElementById("inprogress") as HTMLElement;
+  }
+  function myFunction2() {
+    var x = document.getElementById("inprogress");
     console.log("VIEW ON ")
     console.log(x.className);
     if (x.className == "cards") {
@@ -25,10 +21,9 @@ function myFunction2() : void {
     } else {
       x.className = "cards";
     }
-}
-
-function myFunction3() : void {
-    const x = document.getElementById("completed") as HTMLElement;
+  }
+  function myFunction3() {
+    var x = document.getElementById("completed");
     console.log("VIEW ON ")
     console.log(x.className);
     if (x.className == "cards") {
@@ -37,6 +32,4 @@ function myFunction3() : void {
     } else {
       x.className = "cards";
     }
-}
-
-
+  }
