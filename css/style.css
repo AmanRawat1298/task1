@@ -169,6 +169,10 @@ ul {
   margin: 2%;
 }
 
+.wrapper .tasks .heading a {
+  display: none;
+}
+
 .wrapper .tasks .todo {
   flex: 1 1 0;
 }
@@ -192,6 +196,7 @@ ul {
 }
 
 .wrapper .tasks .card .serial-date {
+  padding: 0 3%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -207,6 +212,7 @@ ul {
 
 .wrapper .tasks .card .content {
   padding: 3%;
+  text-align: left;
 }
 
 .wrapper .tasks .card .content h5 {
@@ -265,30 +271,57 @@ ul {
 }
 
 @media (max-width: 700px) {
-  .top-screen {
+  .wrapper {
+    grid-template-areas: 'top-screen' 'left-nav' 'tasks';
+  }
+  .wrapper .left-nav {
+    grid-area: left-nav;
+    width: 100%;
+    margin: auto;
+  }
+  .wrapper .left-nav ul {
+    width: 100%;
+    display: flex;
+    column-gap: 0;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper .left-nav ul .screens {
+    padding: 0;
+    margin: 10px;
+  }
+  .wrapper .left-nav ul .screens .icon_button {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px auto;
+  }
+  .wrapper .top-screen {
     grid-area: top-screen;
   }
-  .tasks {
+  .wrapper .tasks {
     grid-area: tasks;
     display: flex;
     flex-direction: column;
   }
-  .wrapper {
-    background-color: red;
-    grid-template-rows: 1fr 0.35fr 3fr;
-    grid-template-areas: 'top-screen' 'left-nav' 'tasks';
-  }
-  .left-nav {
-    width: 100vw;
-    max-width: 100%;
-    grid-area: left-nav;
-    flex-direction: row;
-    background-color: green;
-  }
-  .left-nav ul {
+  .wrapper .tasks .heading {
+    width: 95%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 10%;
+    justify-content: space-between;
+  }
+  .wrapper .tasks .heading h {
+    display: inline-block;
+  }
+  .wrapper .tasks .heading a {
+    display: inline;
+    padding-right: 10%;
+  }
+  .wrapper .tasks .cards {
+    display: none;
+  }
+  .wrapper .tasks .cards-responsive {
+    display: block;
   }
 }
